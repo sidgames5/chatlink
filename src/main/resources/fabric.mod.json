@@ -8,7 +8,7 @@
 		"SidGames5"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
+		"homepage": "https://sidgames5.github.io/",
 		"sources": "https://github.com/sidgames5/chatlink"
 	},
 	"license": "LGPL-2.1",
@@ -16,11 +16,11 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-          "com.sidgames5.chatlink.ExampleMod"
+			"com.sidgames5.chatlink.ChatLink"
 		]
 	},
 	"mixins": [
-		"chatlink.mixins.json",
+		"chatlink.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.14.21",
