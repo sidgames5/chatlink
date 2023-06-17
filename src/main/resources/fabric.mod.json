@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "chatlink",
+	"version": "${version}",
+	"name": "ChatLink",
+	"description": "A simple mod to link your server and discord chat",
+	"authors": [
+		"SidGames5"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/sidgames5/chatlink"
+	},
+	"license": "LGPL-2.1",
+	"icon": "assets/chatlink/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "com.sidgames5.chatlink.ExampleMod"
+		]
+	},
+	"mixins": [
+		"chatlink.mixins.json",
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": ">=1.19.3",
+		"java": ">=17"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
