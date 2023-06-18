@@ -7,7 +7,7 @@ public class Secrets {
     public static String getFromConfig(String key) {
         switch (key) {
             case "BOT_TOKEN" -> {
-                return "no";
+                return "";
             }
             case "CHANNEL_ID" -> {
                 return "1119701666929844295";
