@@ -6,6 +6,7 @@ import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.requests.GatewayIntent;
+import org.bukkit.entity.Player;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -38,6 +39,16 @@ public class Bot {
         bot.shutdown();
     }
 
+    public static void sendToDiscord(Player sender, String message) throws IOException {
+        String webhookURL = "https://discord.com/api/webhooks/1119701697581809814/OBLqVKY7FB1RgyvAnfNPUBuhlnbnLfVq09QMDinsNZIQKH9Zijv-A1kTEx2B1aK1eL-w";
+        String imageURL = "https://crafatar.com/avatars/" + sender.getUniqueId();
+
+        DiscordWebhook webhook = new DiscordWebhook(webhookURL);
+        webhook.setUsername(sender.getName());
+        webhook.setContent(message);
+        webhook.setAvatarUrl(imageURL);
+        webhook.execute();
+    }
     public static void sendToDiscord(String sender, String message) throws IOException {
         String webhookURL = "https://discord.com/api/webhooks/1119701697581809814/OBLqVKY7FB1RgyvAnfNPUBuhlnbnLfVq09QMDinsNZIQKH9Zijv-A1kTEx2B1aK1eL-w";
 
