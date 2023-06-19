@@ -9,7 +9,7 @@
     <version>1.0.0-alpha.1+bukkit</version>
     <packaging>jar</packaging>
 
-    <name>chatlink-bukkit-1.0</name>
+    <name>ChatLink</name>
 
     <properties>
         <java.version>1.8</java.version>

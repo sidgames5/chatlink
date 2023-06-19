@@ -1,4 +1,4 @@
-name: chatlink-bukkit-1.0
+name: chatlink
 version: '${project.version}'
-main: com.sidgames5.chatlink.Chatlink_bukkit_1_0
+main: com.sidgames5.chatlink.Main
 api-version: 1.20
