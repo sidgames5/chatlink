@@ -6,7 +6,7 @@
 
     <groupId>com.sidgames5</groupId>
     <artifactId>chatlink</artifactId>
-    <version>1.0.0-alpha.1+bukkit</version>
+    <version>1.0.0+bukkit</version>
     <packaging>jar</packaging>
 
     <name>ChatLink</name>
@@ -57,9 +57,16 @@
             <id>papermc-repo</id>
             <url>https://repo.papermc.io/repository/maven-public/</url>
         </repository>
+
         <repository>
             <id>sonatype</id>
             <url>https://oss.sonatype.org/content/groups/public/</url>
+        </repository>
+
+        <repository>
+            <id>dv8tion</id>
+            <name>m2-dv8tion</name>
+            <url>https://m2.dv8tion.net/releases</url>
         </repository>
     </repositories>
 
@@ -69,6 +76,12 @@
             <artifactId>paper-api</artifactId>
             <version>1.20-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>net.dv8tion</groupId>
+            <artifactId>JDA</artifactId>
+            <version>4.4.0_350</version>
         </dependency>
     </dependencies>
 </project>
