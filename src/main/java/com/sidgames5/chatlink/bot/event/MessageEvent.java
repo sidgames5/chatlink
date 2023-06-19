@@ -9,6 +9,6 @@ public class MessageEvent extends ListenerAdapter {
         String sender = event.getMessage().getAuthor().getName();
         String message = event.getMessage().getContentRaw();
         //logger.info("[DISCORD: " + sender + "] " + message);
-        Bukkit.getServer().broadcastMessage("[DISCORD: " + sender + "] " + message);
+        if (!event.getMessage().getAuthor().isBot()) Bukkit.getServer().broadcastMessage("[DISCORD: " + sender + "] " + message);
     }
 }

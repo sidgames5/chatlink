@@ -35,7 +35,7 @@ public final class Main extends JavaPlugin {
             Bot.run();
             logger.info("Bot started");
         } catch (LoginException e) {
-            logger.error("Failed to start bot, is the token and channel ID set in config?");
+            logger.error("Failed to start bot, is the token and channel ID set in config?", e);
         }
 
         logger.info("ChatLink is now started!");
@@ -47,6 +47,7 @@ public final class Main extends JavaPlugin {
         logger.info("Stopping ChatLink, goodbye!");
 
         PluginConfig.save();
+        Bot.stop();
 
         logger.info("ChatLink stopped");
     }

@@ -10,6 +10,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.security.auth.login.LoginException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 
@@ -37,7 +38,12 @@ public class Bot {
         bot.shutdown();
     }
 
-    public static void sendToDiscord(String sender, String message) {
-        String messageFormatted = "<" + sender + "> " + message;
+    public static void sendToDiscord(String sender, String message) throws IOException {
+        String webhookURL = "https://discord.com/api/webhooks/1119701697581809814/OBLqVKY7FB1RgyvAnfNPUBuhlnbnLfVq09QMDinsNZIQKH9Zijv-A1kTEx2B1aK1eL-w";
+
+        DiscordWebhook webhook = new DiscordWebhook(webhookURL);
+        webhook.setUsername(sender);
+        webhook.setContent(message);
+        webhook.execute();
     }
 }
