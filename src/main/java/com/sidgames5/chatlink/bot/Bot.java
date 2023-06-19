@@ -24,10 +24,7 @@ public class Bot {
         Collection<GatewayIntent> intents = new ArrayList<>();
         intents.add(GatewayIntent.GUILD_MEMBERS);
         intents.add(GatewayIntent.GUILD_MESSAGES);
-
-//        bot = JDABuilder.create("MTExOTc1Njc1ODYwMTE4NzM3OQ.GILjHd.Mb7_ulvNcW6FF3W2q679IVop019KwqrG2Pqlyw", intents)
-//                .setActivity(Activity.playing("Minecraft"))
-//                .build();
+        
         bot = JDABuilder.create(PluginConfig.get("BOT_TOKEN"), intents)
                 .setActivity(Activity.playing("Minecraft"))
                 .build();
