@@ -40,8 +40,8 @@ public class Bot {
     }
 
     public static void sendToDiscord(Player sender, String message) throws IOException {
-        String webhookURL = "https://discord.com/api/webhooks/1119701697581809814/OBLqVKY7FB1RgyvAnfNPUBuhlnbnLfVq09QMDinsNZIQKH9Zijv-A1kTEx2B1aK1eL-w";
-        String imageURL = "https://crafatar.com/avatars/" + sender.getUniqueId();
+        String webhookURL = PluginConfig.get("webhook");
+        String imageURL = "https://crafatar.com/renders/head/" + sender.getUniqueId();
 
         DiscordWebhook webhook = new DiscordWebhook(webhookURL);
         webhook.setUsername(sender.getName());
@@ -50,7 +50,7 @@ public class Bot {
         webhook.execute();
     }
     public static void sendToDiscord(String sender, String message) throws IOException {
-        String webhookURL = "https://discord.com/api/webhooks/1119701697581809814/OBLqVKY7FB1RgyvAnfNPUBuhlnbnLfVq09QMDinsNZIQKH9Zijv-A1kTEx2B1aK1eL-w";
+        String webhookURL = PluginConfig.get("webhook");
 
         DiscordWebhook webhook = new DiscordWebhook(webhookURL);
         webhook.setUsername(sender);

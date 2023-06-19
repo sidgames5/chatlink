@@ -1,5 +1,6 @@
 package com.sidgames5.chatlink.bot.event;
 
+import com.sidgames5.chatlink.PluginConfig;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import org.bukkit.Bukkit;
@@ -9,6 +10,6 @@ public class MessageEvents extends ListenerAdapter {
         String sender = event.getMessage().getAuthor().getName();
         String message = event.getMessage().getContentRaw();
         //logger.info("[DISCORD: " + sender + "] " + message);
-        if (!event.getMessage().getAuthor().isBot()) Bukkit.getServer().broadcastMessage("[DISCORD: " + sender + "] " + message);
+        if (!event.getMessage().getAuthor().isBot() && event.getMessage().getChannel().getId().equals(PluginConfig.get("channelID"))) Bukkit.getServer().broadcastMessage("[DISCORD: " + sender + "] " + message);
     }
 }
