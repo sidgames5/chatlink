@@ -8,11 +8,11 @@ import java.io.File;
 import java.io.IOException;
 
 public class PluginConfig {
-    private static File file;
-    private static FileConfiguration config;
+    private static File file = new File(Bukkit.getServer().getPluginManager().getPlugin("chatlink").getDataFolder(), "config.yml");
+    private static FileConfiguration config = YamlConfiguration.loadConfiguration(file);
 
     public static void setup() {
-        file = new File(Bukkit.getServer().getPluginManager().getPlugin("ChatLink").getDataFolder(), "config.yml");
+        file = new File(Bukkit.getServer().getPluginManager().getPlugin("chatlink").getDataFolder(), "config.yml");
 
         if (!file.exists()) {
             try {

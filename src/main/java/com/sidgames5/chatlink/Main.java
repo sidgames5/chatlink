@@ -1,10 +1,13 @@
 package com.sidgames5.chatlink;
 
+import com.sidgames5.chatlink.bot.Bot;
 import com.sidgames5.chatlink.listeners.ChatListener;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import javax.security.auth.login.LoginException;
 
 public final class Main extends JavaPlugin {
     private static final Logger logger = LoggerFactory.getLogger("ChatLink");
@@ -27,7 +30,15 @@ public final class Main extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents(new ChatListener(), this);
         logger.info("Events registered");
 
-        logger.info("ChatLink is now setup!");
+        logger.info("Starting bot");
+        try {
+            Bot.run();
+            logger.info("Bot started");
+        } catch (LoginException e) {
+            logger.error("Failed to start bot, is the token and channel ID set in config?");
+        }
+
+        logger.info("ChatLink is now started!");
     }
 
     @Override
