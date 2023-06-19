@@ -2,6 +2,7 @@ package com.sidgames5.chatlink;
 
 import com.sidgames5.chatlink.bot.Bot;
 import com.sidgames5.chatlink.listeners.ChatListener;
+import com.sidgames5.chatlink.listeners.PlayerEvents;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.slf4j.Logger;
@@ -11,7 +12,7 @@ import javax.security.auth.login.LoginException;
 
 public final class Main extends JavaPlugin {
     private static final Logger logger = LoggerFactory.getLogger("ChatLink");
-    public static final String VERSION = "1.0.0+bukkit";
+    public static final String VERSION = "1.0.1+bukkit";
 
     @Override
     public void onEnable() {
@@ -28,6 +29,7 @@ public final class Main extends JavaPlugin {
 
         logger.info("Registering events");
         Bukkit.getPluginManager().registerEvents(new ChatListener(), this);
+        Bukkit.getPluginManager().registerEvents(new PlayerEvents(), this);
         logger.info("Events registered");
 
         logger.info("Starting bot");

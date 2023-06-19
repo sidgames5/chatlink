@@ -1,7 +1,7 @@
 package com.sidgames5.chatlink.bot;
 
 import com.sidgames5.chatlink.PluginConfig;
-import com.sidgames5.chatlink.bot.event.MessageEvent;
+import com.sidgames5.chatlink.bot.event.MessageEvents;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Activity;
@@ -25,11 +25,14 @@ public class Bot {
         intents.add(GatewayIntent.GUILD_MEMBERS);
         intents.add(GatewayIntent.GUILD_MESSAGES);
 
+//        bot = JDABuilder.create("MTExOTc1Njc1ODYwMTE4NzM3OQ.GILjHd.Mb7_ulvNcW6FF3W2q679IVop019KwqrG2Pqlyw", intents)
+//                .setActivity(Activity.playing("Minecraft"))
+//                .build();
         bot = JDABuilder.create(PluginConfig.get("BOT_TOKEN"), intents)
                 .setActivity(Activity.playing("Minecraft"))
                 .build();
 
-        bot.addEventListener(new MessageEvent());
+        bot.addEventListener(new MessageEvents());
 
         logger.info("Bot started!");
     }

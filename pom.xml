@@ -6,7 +6,7 @@
 
     <groupId>com.sidgames5</groupId>
     <artifactId>chatlink</artifactId>
-    <version>1.0.0+bukkit</version>
+    <version>1.0.1+bukkit</version>
     <packaging>jar</packaging>
 
     <name>ChatLink</name>

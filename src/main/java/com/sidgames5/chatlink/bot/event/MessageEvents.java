@@ -4,7 +4,7 @@ import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import org.bukkit.Bukkit;
 
-public class MessageEvent extends ListenerAdapter {
+public class MessageEvents extends ListenerAdapter {
     public void onGuildMessageReceived(GuildMessageReceivedEvent event) {
         String sender = event.getMessage().getAuthor().getName();
         String message = event.getMessage().getContentRaw();
