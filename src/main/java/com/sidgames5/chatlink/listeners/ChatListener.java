@@ -11,7 +11,9 @@ public class ChatListener implements Listener {
     @EventHandler
     public void onPlayerChat(PlayerChatEvent event) {
         try {
-            Bot.sendToDiscord(event.getPlayer(), event.getMessage());
+            if (!event.getMessage().contains("@everyone")) {
+                Bot.sendToDiscord(event.getPlayer(), event.getMessage());
+            }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

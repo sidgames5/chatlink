@@ -1,5 +1,9 @@
 # 1.0.1
 
+## Changes
+
+- Removed ability to ping @everyone
+
 ## Fixes
 
 - Outer layer does not show on discord profile picture
