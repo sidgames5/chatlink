@@ -41,7 +41,7 @@ public class Bot {
 
     public static void sendToDiscord(Player sender, String message) throws IOException {
         String webhookURL = PluginConfig.get("webhook");
-        String imageURL = "https://crafatar.com/renders/head/" + sender.getUniqueId();
+        String imageURL = "https://crafatar.com/renders/head/" + sender.getUniqueId() + "?overlay";
 
         DiscordWebhook webhook = new DiscordWebhook(webhookURL);
         webhook.setUsername(sender.getName());
