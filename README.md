@@ -7,6 +7,7 @@ A simple mod to link your server and discord chat
 | Mod Version | Supported Mod Loaders | Supported Minecraft Versions  |
 |-------------|-----------------------|-------------------------------|
 | 1.0.0       | Spigot, Paper, Purpur | 1.19.x, 1.20.x                |
+| 1.0.1       | Spigot, Paper, Purpur | 1.19.x, 1.20.x                |
 
 ## Download
 
