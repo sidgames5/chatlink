@@ -27,7 +27,7 @@ public class Bot {
         intents.add(GatewayIntent.GUILD_MESSAGES);
         
         bot = JDABuilder.create(PluginConfig.get("BOT_TOKEN"), intents)
-                .setActivity(Activity.playing("Minecraft"))
+                .setActivity(Activity.listening("for messages"))
                 .build();
 
         bot.addEventListener(new MessageEvents());
