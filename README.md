@@ -8,6 +8,12 @@ A simple mod to link your server and discord chat
 |-------------|-----------------------|-------------------------------|
 | 1.0.0       | Spigot, Paper, Purpur | 1.19.x, 1.20.x                |
 
+## Download
+
+The latest version of ChatLink can be downloaded via [this link](https://modrinth.com/plugin/chatlink/versions)...
+
+...or download the latest unofficial version of ChatLink via [this link](https://nightly.link/LeWolfYT/chatlink/workflows/maven/bukkit/chatlink.jar.zip).
+
 ## Installation
 
 1. Download a version
