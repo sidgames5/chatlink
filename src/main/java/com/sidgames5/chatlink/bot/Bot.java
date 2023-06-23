@@ -27,7 +27,7 @@ public class Bot {
         intents.add(GatewayIntent.GUILD_MESSAGES);
         
         bot = JDABuilder.create(PluginConfig.get("BOT_TOKEN"), intents)
-                .setActivity(Activity.listening("for messages"))
+                .setActivity(Activity.watching("chat"))
                 .build();
 
         bot.addEventListener(new MessageEvents());
