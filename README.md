@@ -10,9 +10,9 @@ A simple mod to link your server and discord chat
 
 ## Download
 
-The latest version of ChatLink can be downloaded via [this link](https://nightly.link/LeWolfYT/chatlink/workflows/maven/bukkit/chatlink.jar.zip)...
+The latest version of ChatLink can be downloaded via [this link](https://nightly.link/sidgames5/chatlink/workflows/maven/bukkit/chatlink.jar.zip)...
 
-...or download the latest unofficial version of ChatLink via [this link](https://nightly.link/sidgames5/chatlink/workflows/maven/bukkit/chatlink.jar.zip).
+...or download the latest unofficial version of ChatLink via [this link](https://nightly.link/LeWolfYT/chatlink/workflows/maven/bukkit/chatlink.jar.zip).
 
 ## Installation
 
