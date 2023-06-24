@@ -20,7 +20,6 @@ public class MessageEvents extends ListenerAdapter {
     public void onGuildMessageUpdate(GuildMessageUpdateEvent event) {
         String sender = event.getMessage().getAuthor().getName();
         String message = event.getMessage().getContentRaw();
-        logger.info("edit message: " + message);
         //logger.info("[DISCORD: " + sender + "] (Edited) " + message);
         if (!event.getMessage().getAuthor().isBot() && event.getMessage().getChannel().getId().equals(PluginConfig.get("channelID"))) Bukkit.getServer().broadcastMessage("[DISCORD: " + sender + ", Edited] " + MessageUtil.replaceIDwithUsername(message));
     }
