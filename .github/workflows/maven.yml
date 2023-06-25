@@ -11,6 +11,11 @@ name: Java CI with Maven
 on:
   push:
     branches: [ "bukkit" ]
+    paths-ignore:
+      - '.gitignore'
+      - 'README.md'
+      - 'CHANGELOG.md'
+      - '.github/workflows/*.yml'
   pull_request:
     branches: [ "bukkit" ]
 
