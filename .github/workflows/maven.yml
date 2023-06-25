@@ -15,7 +15,6 @@ on:
       - '.gitignore'
       - 'README.md'
       - 'CHANGELOG.md'
-      - '.github/workflows/*.yml'
   pull_request:
     branches: [ "bukkit" ]
 
