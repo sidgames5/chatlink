@@ -36,7 +36,11 @@ public class MessageUtil {
                         id = member.getId();
                     }
                 }
-                result = result.concat("<@" + id + ">");
+                if (id.equals("")) {
+                    result = result.concat("@" + username);
+                } else {
+                    result = result.concat("<@" + id + ">");
+                }
             } else {
                 result = result.concat(token + " ");
             }
