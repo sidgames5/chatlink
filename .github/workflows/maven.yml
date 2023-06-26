@@ -10,13 +10,13 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ "bukkit" ]
+    branches: [ "stable", "ptb", "dev" ]
     paths-ignore:
       - '.gitignore'
       - 'README.md'
       - 'CHANGELOG.md'
   pull_request:
-    branches: [ "bukkit" ]
+    branches: [ "stable", "ptb", "dev" ]
 
 jobs:
   build:
