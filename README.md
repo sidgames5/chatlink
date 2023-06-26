@@ -8,6 +8,7 @@ A simple mod to link your server and discord chat
 |-------------|-----------------------|-------------------------------|
 | 1.0.0       | Spigot, Paper, Purpur | 1.19.x, 1.20.x                |
 | 1.0.1       | Spigot, Paper, Purpur | 1.19.x, 1.20.x                |
+| 1.1.0       | Spigot, Paper, Purpur | 1.19.x, 1.20.x                |
 
 ## Download
 
