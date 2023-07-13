@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "chatlink",
+  "version": "${version}",
+  "name": "ChatLink",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/sidgames5/chatlink/tree/fabric-1.20.1"
+  },
+  "license": "MIT",
+  "icon": "assets/chatlink/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "com.sidgames5.chatlink.ChatLink"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}

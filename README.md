@@ -4,30 +4,20 @@ A simple mod to link your server and discord chat
 
 ## Versions
 
-| Mod Version | Supported Mod Loaders | Supported Minecraft Versions  |
-|-------------|-----------------------|-------------------------------|
-| 1.0.0       | Spigot, Paper, Purpur | 1.19.x, 1.20.x                |
-| 1.0.1       | Spigot, Paper, Purpur | 1.19.x, 1.20.x                |
-| 1.1.0       | Spigot, Paper, Purpur | 1.19.x, 1.20.x                |
+| Mod Version | Supported Mod Loaders | Supported Minecraft Versions |
+|-------------|-----------------------|------------------------------|
+| 1.0.0       | Spigot, Paper, Purpur | 1.19.x, 1.20.x               |
+| 1.0.1       | Spigot, Paper, Purpur | 1.19.x, 1.20.x               |
+| 1.1.0       | Spigot, Paper, Purpur | 1.19.x, 1.20.x               |
+| 1.2.0       | Fabric                | 1.20.0, 1.20.1               |
 
 ## Download
 
-The latest version of ChatLink can be downloaded via [this link](https://modrinth.com/plugin/chatlink/versions)...
-
-...or download the latest development built of ChatLink via [this link](https://nightly.link/sidgames5/chatlink/workflows/maven/bukkit/chatlink-latest+bukkit.jar.zip).
+The latest version of ChatLink can be downloaded via [this link](https://modrinth.com/plugin/chatlink/versions)
 
 ## Installation
 
-1. Download a version
-2. Place it in the `plugins` folder of your server
-3. Run your server to generate config files
-4. Make a bot for the integration in the discord developer portal
-5. Make a webhook in the channel you would like to use the integration in
-6. Open the config file in `plugins/chatlink/config.yml`
-7. Get the channel ID for the channel you created the webhook in
-8. Place all of the required information inside the config file
-9. Restart your server
-10. Done!
+This section needs to be written
 
 ## Building
 

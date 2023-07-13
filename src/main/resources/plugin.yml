@@ -1,4 +1,0 @@
-name: chatlink
-version: '${project.version}'
-main: com.sidgames5.chatlink.Main
-api-version: '1.19'
